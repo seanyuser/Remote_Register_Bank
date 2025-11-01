@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  1 15:38:19 2025
+# Process ID         : 39292
+# Current directory  : C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.runs/synth_1
+# Command line       : vivado.exe -log uart_reg_bank_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_reg_bank_top.tcl
+# Log file           : C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.runs/synth_1/uart_reg_bank_top.vds
+# Journal file       : C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-NEV10SI
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7530U with Radeon Graphics         
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16442 MB
+# Swap memory        : 9216 MB
+# Total Virtual      : 25658 MB
+# Available Virtual  : 3498 MB
+#-----------------------------------------------------------
+source uart_reg_bank_top.tcl -notrace
