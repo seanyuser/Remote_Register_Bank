@@ -1,6 +1,2 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sim_1/new/simulation.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_uart_reg_bank_top
-WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sim_1/new/simulation.v:36]
-ERROR: [VRFC 10-2939] 'int' is an unknown type [C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sim_1/new/simulation.v:36]
-ERROR: [VRFC 10-2989] 'int' is not declared [C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sim_1/new/simulation.v:36]
-ERROR: [VRFC 10-8530] module 'tb_uart_reg_bank_top' is ignored due to previous errors [C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sim_1/new/simulation.v:3]

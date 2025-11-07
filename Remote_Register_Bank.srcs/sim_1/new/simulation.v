@@ -27,13 +27,14 @@ module tb_uart_reg_bank_top;
     //    지정된 8비트 데이터를 직렬로 쏴줍니다.
     task send_byte;
         input [7:0] data;
+        integer i;
         begin
             // Start Bit (1비트 시간)
             uart_rx_tb <= 1'b0;
             #(BIT_PERIOD);
             
             // 8 Data Bits (LSB부터 전송)
-            for (int i = 0; i < 8; i = i + 1) begin
+            for (i = 0; i < 8; i = i + 1) begin
                 uart_rx_tb <= data[i];
                 #(BIT_PERIOD);
             end

@@ -58,7 +58,6 @@ module uart_reg_bank_top (
                 // S_IDLE: 첫 번째 바이트(명령)를 기다리는 상태
                 S_IDLE: begin
                     // TODO: rx_data[7] (MSB) 비트를 확인하여 '읽기'/'쓰기' 명령을 구분하세요.
-                    
                     if (rx_data[7] == 1'b1) begin // '읽기' 명령 (예: 8'h81)
                         // TODO: (해답)
                         // 1. rx_data의 하위 2비트 (rx_data[1:0])를 주소로 사용합니다.
@@ -91,12 +90,11 @@ module uart_reg_bank_top (
                     //    (tx_data <= 8'hF0; tx_start <= 1'b1;)
                     // 3. state를 S_IDLE로 복귀시킵니다. (다음 명령 대기)
                     register_bank[write_addr_buffer] <= rx_data;
-                    tx_data <= 8'hF0; // "OK" 응답
+                    tx_data <= 8'h61; // "OK" 응답
                     tx_start <= 1'b1;
                     state <= S_IDLE;
                     
                 end
-
             endcase
         end
     end

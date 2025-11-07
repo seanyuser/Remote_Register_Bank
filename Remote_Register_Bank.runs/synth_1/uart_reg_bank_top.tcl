@@ -58,6 +58,8 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -75,9 +77,9 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/user/Documents/GitHub/uart_rx_core/uart_rx_core.srcs/sources_1/new/uart_rx_core.v
-  C:/Users/user/Documents/GitHub/uart_echo/uart_echo.srcs/sources_1/new/uart_tx_core.v
-  C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sources_1/new/top_module.v
+  C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sources_1/imports/new/uart_rx_core.v
+  C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sources_1/imports/new/uart_tx_core.v
+  C:/Users/user/Downloads/top_module.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -88,8 +90,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/user/Documents/GitHub/uart_rx_core/uart_rx_core.srcs/constrs_1/new/constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/user/Documents/GitHub/uart_rx_core/uart_rx_core.srcs/constrs_1/new/constraints.xdc]
+read_xdc C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/constrs_1/imports/new/constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/constrs_1/imports/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 

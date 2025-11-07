@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+------------------------------------
+시뮬레이션 시작: 레지스터 뱅크 테스트
+[520835000 ns] 테스트 1: 주소 1번에 0xAA 쓰기
+[4687515000 ns] 테스트 2: 주소 1번 읽기
+[7812525000 ns] 테스트 3: 주소 3번에 0x12 쓰기
+[11979205000 ns] 테스트 4: 주소 3번 읽기
+[15104215000 ns] 테스트 완료. 웨이브폼을 확인하세요.
+$stop called at time : 15104215 ns : File "C:/Users/user/Documents/GitHub/Remote_Register_Bank/Remote_Register_Bank.srcs/sim_1/new/simulation.v" Line 87
